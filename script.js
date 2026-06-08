@@ -3,7 +3,7 @@ const toast = document.querySelector("[data-link-toast]");
 const projectLinks = document.querySelectorAll("[data-project-link]");
 
 const updateHeader = () => {
-  header?.classList.toggle("is-scrolled", window.scrollY > 12);
+  header?.classList.toggle("is-scrolled", window.scrollY > 8);
 };
 
 const showToast = (message) => {
@@ -19,7 +19,7 @@ const showToast = (message) => {
     window.setTimeout(() => {
       toast.hidden = true;
     }, 180);
-  }, 2600);
+  }, 2400);
 };
 
 projectLinks.forEach((link) => {
@@ -29,7 +29,7 @@ projectLinks.forEach((link) => {
     if (!href || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
 
     event.preventDefault();
-    showToast(`${href} 페이지를 나중에 상세 프로젝트로 연결할 수 있습니다.`);
+    showToast(`${href} 경로에 프로젝트 상세 페이지를 추가할 수 있습니다.`);
   });
 });
 
