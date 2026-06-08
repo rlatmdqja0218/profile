@@ -134,8 +134,8 @@ main {
 
 .hero {
   display: grid;
-  min-height: min(640px, 76svh);
-  padding: clamp(52px, 7vw, 88px) 0 clamp(42px, 5vw, 64px);
+  min-height: min(650px, 76svh);
+  padding: clamp(58px, 8vw, 106px) 0 clamp(44px, 6vw, 76px);
   border-bottom: 1px solid var(--line);
 }
 
@@ -153,30 +153,40 @@ main {
 
 .hero-kicker {
   max-width: 520px;
-  margin-bottom: clamp(28px, 4vw, 44px);
+  margin-bottom: clamp(34px, 5vw, 64px);
 }
 
 .hero h1 {
-  max-width: 1100px;
+  max-width: 980px;
   margin: 0;
-  font-size: clamp(40px, 6vw, 76px);
+  font-size: clamp(40px, 5.4vw, 68px);
   font-weight: 450;
-  line-height: 0.98;
+  line-height: 1.02;
   letter-spacing: 0;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.72fr) minmax(260px, 0.28fr);
-  gap: clamp(28px, 8vw, 90px);
+  grid-template-columns: minmax(260px, 0.46fr) minmax(280px, 0.34fr);
+  justify-content: space-between;
+  gap: clamp(42px, 10vw, 132px);
   align-self: end;
-  margin-top: clamp(32px, 5vw, 52px);
+  margin-top: clamp(46px, 7vw, 84px);
 }
 
 .hero-grid p,
 .about-copy p {
   margin: 0;
   color: #3f3f3a;
+}
+
+.hero-statement {
+  max-width: 420px;
+}
+
+.hero-note {
+  max-width: 360px;
+  color: var(--muted);
 }
 
 .featured-media {
