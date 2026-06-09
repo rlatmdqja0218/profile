@@ -136,6 +136,11 @@ img {
   mix-blend-mode: multiply;
 }
 
+.dan-project-logo {
+  width: 64px;
+  margin-bottom: 34px;
+}
+
 .project-summary p {
   max-width: 510px;
   margin: 0;
@@ -239,6 +244,34 @@ img {
   margin-top: 180px;
 }
 
+.dan-sketch {
+  grid-column: 1 / span 4;
+}
+
+.dan-blueprint {
+  grid-column: 5 / span 8;
+  margin-top: 84px;
+}
+
+.dan-structure {
+  grid-column: 4 / span 7;
+  margin-top: 78px;
+}
+
+.dan-binding {
+  grid-column: 1 / span 8;
+}
+
+.dan-top-view {
+  grid-column: 9 / span 4;
+  margin-top: 126px;
+}
+
+.dan-making {
+  grid-column: 3 / span 9;
+  margin-top: 92px;
+}
+
 .main-object {
   grid-column: 1 / span 8;
 }
@@ -340,6 +373,30 @@ img {
   .tray-assembly {
     grid-column: 8 / span 5;
   }
+
+  .dan-sketch {
+    grid-column: 1 / span 4;
+  }
+
+  .dan-blueprint {
+    grid-column: 5 / span 8;
+  }
+
+  .dan-structure {
+    grid-column: 3 / span 9;
+  }
+
+  .dan-binding {
+    grid-column: 1 / span 9;
+  }
+
+  .dan-top-view {
+    grid-column: 9 / span 4;
+  }
+
+  .dan-making {
+    grid-column: 3 / span 10;
+  }
 }
 
 @media (max-width: 620px) {
@@ -417,6 +474,34 @@ img {
 
   .tray-assembly {
     grid-column: 2 / span 5;
+    margin-top: 34px;
+  }
+
+  .dan-sketch {
+    grid-column: 1 / span 3;
+  }
+
+  .dan-blueprint {
+    grid-column: 3 / span 4;
+    margin-top: 78px;
+  }
+
+  .dan-structure {
+    grid-column: 1 / span 6;
+    margin-top: 34px;
+  }
+
+  .dan-binding {
+    grid-column: 1 / span 6;
+  }
+
+  .dan-top-view {
+    grid-column: 2 / span 5;
+    margin-top: 34px;
+  }
+
+  .dan-making {
+    grid-column: 1 / span 6;
     margin-top: 34px;
   }
 
