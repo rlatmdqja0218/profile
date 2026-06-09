@@ -7,237 +7,336 @@
       name="description"
       content="김승범의 리빙 오브젝트, 조명, 홈웨어, 작은 가구, 디지털 제작 실험 아카이브."
     />
-    <title>김승범 / Kim Seungbeom</title>
+    <title>김승범 / Seungbum Kim</title>
     <link
       rel="stylesheet"
-      crossorigin
-      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="site-header" data-scroll-header>
-      <a class="brand" href="#top" aria-label="처음으로 이동">
-        <span>김승범</span>
-        <span>Kim Seungbeom</span>
-      </a>
+    <main class="portfolio-shell">
+      <aside class="profile-panel" aria-labelledby="profile-title">
+        <header class="panel-header profile-header">
+          <a class="accent-link" href="#profile-title">Seungbum Kim</a>
+          <span>Living Designer</span>
+        </header>
 
-      <nav class="site-nav" aria-label="주요 메뉴">
-        <a href="#work">Archive</a>
-        <a href="#about">Info</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <main id="top">
-      <section class="intro" aria-labelledby="intro-title">
-        <div class="intro-meta">
-          <span>Personal Portfolio</span>
-          <span>Living Objects / Lighting / Homeware</span>
-        </div>
-
-        <div class="intro-grid">
-          <div class="intro-name">
-            <p>김승범</p>
-            <p>Kim Seungbeom</p>
-          </div>
-
-          <div class="intro-main">
-            <h1 id="intro-title">
-              <span>리빙 오브젝트</span>
-              <span>조명 / 홈웨어</span>
-            </h1>
+        <div class="profile-layout">
+          <div class="profile-copy">
+            <h1 id="profile-title">김승범</h1>
             <p>
-              생활 공간 안에 놓이는 사물과 조명, 작은 가구를 중심으로<br />
-              형태, 재료, 제작 방식의 관계를 실험합니다.
+              생활 공간을 위한 사물과 조명, 홈웨어를 만듭니다. 일상 속에 오래 머무는
+              물건의 <span class="accent-text">형태, 비례, 재료, 제작 방식</span>을
+              실험합니다.
             </p>
+            <p>(based in Ansan, Korea)</p>
+
+            <p class="profile-paragraph">
+              직접 만들고, 실패하고, 개선하는 방식으로 작업합니다.<br />
+              조명, 홈웨어, 작은 가구처럼 생활 안에 놓이는 사물을 중심으로 형태와 재료,
+              제작 방식을 실험합니다.
+            </p>
+
+            <ul class="focus-list" aria-label="작업 분야">
+              <li>Lighting</li>
+              <li>Homeware</li>
+              <li>Small Furniture</li>
+              <li>Living Objects</li>
+              <li>3D Printing</li>
+              <li>Digital Fabrication</li>
+              <li>Material Studies</li>
+              <li>Vibe Coding</li>
+            </ul>
+
+            <p class="profile-paragraph">
+              작업이나 프로젝트에 대해 이야기하고 싶다면 편하게 연락 주세요.<br />
+              전체 포트폴리오 자료는 필요 시 공유할 수 있습니다.
+            </p>
+
+            <div class="profile-links">
+              <a
+                class="accent-link"
+                href="https://www.instagram.com/from_ksb"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Instagram
+              </a>
+              <a class="accent-link" href="mailto:rlatmdqja0218@gmail.com">Email</a>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <section class="work-panel" aria-label="작업 아카이브" data-work-panel>
+        <header class="panel-header work-header">
+          <button class="view-button is-active" type="button" data-view-target="feed">
+            <span class="feed-icon" aria-hidden="true">↕</span>
+            Feed
+          </button>
+          <button class="view-button" type="button" data-view-target="overview">
+            <span class="overview-icon" aria-hidden="true">≡</span>
+            Overview
+          </button>
+          <button class="view-button" type="button" data-view-target="contact">
+            Contact
+          </button>
+        </header>
+
+        <div class="view is-active" data-view="feed">
+          <article class="project">
+            <div class="project-info">
+              <div>
+                <p class="project-kicker">01</p>
+                <h2>Living Object Study</h2>
+              </div>
+              <div class="project-description">
+                <p>생활 공간에서 사용되는 사물의 형태와 비례를 실험한 작업</p>
+                <dl>
+                  <div>
+                    <dt>Work:</dt>
+                    <dd>Living Object, Form Study</dd>
+                  </div>
+                  <div>
+                    <dt>Period:</dt>
+                    <dd>2026</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <div class="project-images">
+              <a
+                class="image-placeholder image-living-a"
+                href="projects/living-object-study.html"
+                data-project-link
+              >
+                <span>Living Object Study / 01</span>
+              </a>
+              <a
+                class="image-placeholder image-living-b"
+                href="projects/living-object-study.html"
+                data-project-link
+              >
+                <span>Living Object Study / 02</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-info">
+              <div>
+                <p class="project-kicker">02</p>
+                <h2>Lighting / Object</h2>
+              </div>
+              <div class="project-description">
+                <p>빛, 표면, 분위기의 관계를 다루는 조명 오브젝트 실험</p>
+                <dl>
+                  <div>
+                    <dt>Work:</dt>
+                    <dd>Lighting, Object</dd>
+                  </div>
+                  <div>
+                    <dt>Period:</dt>
+                    <dd>2026</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <div class="project-images">
+              <a
+                class="image-placeholder image-lighting-a"
+                href="projects/lighting-object.html"
+                data-project-link
+              >
+                <span>Lighting / Surface</span>
+              </a>
+              <a
+                class="image-placeholder image-lighting-b"
+                href="projects/lighting-object.html"
+                data-project-link
+              >
+                <span>Lighting / Atmosphere</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-info">
+              <div>
+                <p class="project-kicker">03</p>
+                <h2>Homeware / Table Object</h2>
+              </div>
+              <div class="project-description">
+                <p>테이블 위의 작은 생활 사물과 사용 행위를 다루는 작업</p>
+                <dl>
+                  <div>
+                    <dt>Work:</dt>
+                    <dd>Homeware, Table Object</dd>
+                  </div>
+                  <div>
+                    <dt>Period:</dt>
+                    <dd>2025</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <div class="project-images">
+              <a
+                class="image-placeholder image-homeware-a"
+                href="projects/homeware-table-object.html"
+                data-project-link
+              >
+                <span>Table Object / 01</span>
+              </a>
+              <a
+                class="image-placeholder image-homeware-b"
+                href="projects/homeware-table-object.html"
+                data-project-link
+              >
+                <span>Table Object / 02</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-info">
+              <div>
+                <p class="project-kicker">04</p>
+                <h2>Small Furniture / Object</h2>
+              </div>
+              <div class="project-description">
+                <p>작은 가구와 오브젝트 사이의 비례, 구조, 존재감을 탐구한 작업</p>
+                <dl>
+                  <div>
+                    <dt>Work:</dt>
+                    <dd>Furniture, Object</dd>
+                  </div>
+                  <div>
+                    <dt>Period:</dt>
+                    <dd>2025</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <div class="project-images">
+              <a
+                class="image-placeholder image-furniture-a"
+                href="projects/small-furniture-object.html"
+                data-project-link
+              >
+                <span>Small Furniture / 01</span>
+              </a>
+              <a
+                class="image-placeholder image-furniture-b"
+                href="projects/small-furniture-object.html"
+                data-project-link
+              >
+                <span>Small Furniture / 02</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-info">
+              <div>
+                <p class="project-kicker">05</p>
+                <h2>Digital Fabrication Study</h2>
+              </div>
+              <div class="project-description">
+                <p>웹 기반 G-code 생성과 3D 프린팅 툴패스를 다룬 제작 실험</p>
+                <dl>
+                  <div>
+                    <dt>Work:</dt>
+                    <dd>Digital Fabrication</dd>
+                  </div>
+                  <div>
+                    <dt>Period:</dt>
+                    <dd>Process Study</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <div class="project-images">
+              <a
+                class="image-placeholder image-fabrication-a"
+                href="projects/digital-fabrication-study.html"
+                data-project-link
+              >
+                <span>Toolpath / 01</span>
+              </a>
+              <a
+                class="image-placeholder image-fabrication-b"
+                href="projects/digital-fabrication-study.html"
+                data-project-link
+              >
+                <span>Material Test / 02</span>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="view overview-view" data-view="overview" hidden>
+          <div class="overview-intro">
+            <p>Overview</p>
+            <p>생활 공간을 위한 사물, 조명, 홈웨어와 제작 실험의 전체 목록입니다.</p>
           </div>
 
-          <aside class="intro-side" aria-label="작업 키워드">
-            <p>Living Objects / Lighting / Homeware</p>
-            <p>Material studies, domestic scale, digital fabrication.</p>
-          </aside>
+          <div class="overview-list">
+            <a href="projects/living-object-study.html" data-project-link>
+              <span>01</span>
+              <strong>Living Object Study</strong>
+              <span>Living Object</span>
+              <span>2026</span>
+            </a>
+            <a href="projects/lighting-object.html" data-project-link>
+              <span>02</span>
+              <strong>Lighting / Object</strong>
+              <span>Lighting</span>
+              <span>2026</span>
+            </a>
+            <a href="projects/homeware-table-object.html" data-project-link>
+              <span>03</span>
+              <strong>Homeware / Table Object</strong>
+              <span>Homeware</span>
+              <span>2025</span>
+            </a>
+            <a href="projects/small-furniture-object.html" data-project-link>
+              <span>04</span>
+              <strong>Small Furniture / Object</strong>
+              <span>Furniture</span>
+              <span>2025</span>
+            </a>
+            <a href="projects/digital-fabrication-study.html" data-project-link>
+              <span>05</span>
+              <strong>Digital Fabrication Study</strong>
+              <span>Process Study</span>
+              <span>2025–2026</span>
+            </a>
+          </div>
         </div>
-      </section>
 
-      <section class="opening-image" aria-label="대표 이미지 영역">
-        <div class="image-placeholder image-wide image-living">
-          <span>Living Object / material study</span>
-        </div>
-        <div class="image-placeholder image-small image-lighting">
-          <span>Lighting note</span>
-        </div>
-      </section>
-
-      <section class="feed-section" id="work" aria-labelledby="work-title">
-        <div class="feed-head">
-          <p>Archive</p>
-          <h2 id="work-title">생활 공간과 사물에 관한 작업 기록</h2>
-        </div>
-
-        <div class="work-feed">
-          <a class="work-entry entry-living" href="projects/living-object-study.html" data-project-link>
-            <div class="entry-index">01</div>
-            <div class="entry-title">
-              <h3>Living Object Study</h3>
-              <p>생활 공간에서 사용되는 사물의 형태와 비례를 실험한 작업</p>
-            </div>
-            <div class="entry-image">
-              <div class="image-placeholder image-living">
-                <span>Living Object Study</span>
-              </div>
-            </div>
-            <dl class="entry-info">
-              <div>
-                <dt>Category</dt>
-                <dd>Living Object</dd>
-              </div>
-              <div>
-                <dt>Year</dt>
-                <dd>2026</dd>
-              </div>
-            </dl>
-          </a>
-
-          <a class="work-entry entry-lighting" href="projects/lighting-object.html" data-project-link>
-            <div class="entry-index">02</div>
-            <div class="entry-title">
-              <h3>Lighting / Object</h3>
-              <p>빛, 표면, 분위기의 관계를 다루는 조명 오브젝트 실험</p>
-            </div>
-            <div class="entry-image">
-              <div class="image-placeholder image-tall image-lighting">
-                <span>Light / surface</span>
-              </div>
-            </div>
-            <dl class="entry-info">
-              <div>
-                <dt>Category</dt>
-                <dd>Lighting, Object</dd>
-              </div>
-              <div>
-                <dt>Year</dt>
-                <dd>2026</dd>
-              </div>
-            </dl>
-          </a>
-
-          <a class="work-entry entry-homeware" href="projects/homeware-table-object.html" data-project-link>
-            <div class="entry-index">03</div>
-            <div class="entry-title">
-              <h3>Homeware / Table Object</h3>
-              <p>테이블 위의 작은 생활 사물과 사용 행위를 다루는 작업</p>
-            </div>
-            <div class="entry-image">
-              <div class="image-placeholder image-low image-homeware">
-                <span>Table Object</span>
-              </div>
-            </div>
-            <dl class="entry-info">
-              <div>
-                <dt>Category</dt>
-                <dd>Homeware, Table Object</dd>
-              </div>
-              <div>
-                <dt>Year</dt>
-                <dd>2025</dd>
-              </div>
-            </dl>
-          </a>
-
-          <a class="work-entry entry-furniture" href="projects/small-furniture-object.html" data-project-link>
-            <div class="entry-index">04</div>
-            <div class="entry-title">
-              <h3>Small Furniture / Object</h3>
-              <p>작은 가구와 오브젝트 사이의 비례, 구조, 존재감을 탐구한 작업</p>
-            </div>
-            <div class="entry-image">
-              <div class="image-placeholder image-furniture">
-                <span>Small Furniture</span>
-              </div>
-            </div>
-            <dl class="entry-info">
-              <div>
-                <dt>Category</dt>
-                <dd>Furniture, Object</dd>
-              </div>
-              <div>
-                <dt>Year</dt>
-                <dd>2025</dd>
-              </div>
-            </dl>
-          </a>
-
-          <a
-            class="work-entry entry-fabrication"
-            href="projects/digital-fabrication-study.html"
-            data-project-link
-          >
-            <div class="entry-index">05</div>
-            <div class="entry-title">
-              <h3>Digital Fabrication Study</h3>
-              <p>웹 기반 G-code 생성과 3D 프린팅 툴패스를 다룬 제작 실험</p>
-            </div>
-            <div class="entry-image">
-              <div class="image-placeholder image-wide image-fabrication">
-                <span>Toolpath / fabrication</span>
-              </div>
-            </div>
-            <dl class="entry-info">
-              <div>
-                <dt>Category</dt>
-                <dd>Digital Fabrication</dd>
-              </div>
-              <div>
-                <dt>Year</dt>
-                <dd>Process</dd>
-              </div>
-            </dl>
-          </a>
-        </div>
-      </section>
-
-      <section class="info-section" id="about" aria-labelledby="about-title">
-        <div class="info-label">Info</div>
-        <div class="info-copy">
-          <h2 id="about-title">개인 작업 아카이브</h2>
-          <p>
-            리빙 오브젝트, 조명, 홈웨어, 작은 가구를 중심으로 생활 공간 안에서 사물이
-            놓이고 쓰이는 방식을 관찰합니다. 형태와 재료, 제작 과정은 고정된 결과보다
-            작업을 이어가는 기준으로 다룹니다.
-          </p>
-        </div>
-        <dl class="info-list">
+        <div class="view contact-view" data-view="contact" hidden>
           <div>
-            <dt>Focus</dt>
-            <dd>Living Objects, Lighting, Homeware</dd>
+            <p>Contact</p>
+            <h2>작업과 프로젝트에 관한 이야기를 기다립니다.</h2>
           </div>
-          <div>
-            <dt>Process</dt>
-            <dd>Material Experiment, Digital Fabrication</dd>
-          </div>
-        </dl>
-      </section>
-
-      <section class="contact-section" id="contact" aria-labelledby="contact-title">
-        <div>
-          <p>Contact</p>
-          <h2 id="contact-title">작업 문의와 포트폴리오 리뷰를 위한 연락처</h2>
+          <address>
+            <a
+              class="accent-link"
+              href="https://www.instagram.com/from_ksb"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Instagram — @from_ksb
+            </a>
+            <a class="accent-link" href="mailto:rlatmdqja0218@gmail.com">
+              Email — rlatmdqja0218@gmail.com
+            </a>
+          </address>
         </div>
-        <address class="contact-links">
-          <a href="https://www.instagram.com/from_ksb" target="_blank" rel="noreferrer">
-            Instagram — @from_ksb
-          </a>
-          <a href="mailto:rlatmdqja0218@gmail.com">Email — rlatmdqja0218@gmail.com</a>
-        </address>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <span>김승범 / Kim Seungbeom</span>
-      <span>Living Objects Archive</span>
-      <span>2026</span>
-    </footer>
 
     <div class="link-toast" role="status" aria-live="polite" data-link-toast hidden>
       프로젝트 상세 페이지는 이후 같은 경로에 추가할 수 있습니다.
