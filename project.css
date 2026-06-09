@@ -88,7 +88,7 @@ img {
 }
 
 .trolley-page .project-hero img {
-  aspect-ratio: 1.42 / 1;
+  aspect-ratio: 16 / 9;
   object-position: center center;
 }
 
@@ -290,6 +290,22 @@ img {
 
 .detail-grid .project-figure:nth-child(2) {
   margin-bottom: 76px;
+}
+
+.altar-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+.altar-detail-grid .project-figure:first-child {
+  grid-column: 1 / span 7;
+}
+
+.altar-detail-grid .project-figure:last-child {
+  grid-column: 8 / span 5;
+  margin-top: 118px;
 }
 
 .project-closing {
@@ -525,6 +541,20 @@ img {
 
   .detail-grid .project-figure:last-child {
     grid-column: 2;
+  }
+
+  .altar-detail-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .altar-detail-grid .project-figure:first-child {
+    grid-column: 1 / span 6;
+  }
+
+  .altar-detail-grid .project-figure:last-child {
+    grid-column: 2 / span 5;
+    margin-top: 34px;
   }
 
   .closing-layout {

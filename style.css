@@ -276,7 +276,7 @@ button {
 }
 
 .project-images-trolley {
-  grid-template-columns: minmax(260px, 0.82fr) minmax(0, 1.45fr);
+  grid-template-columns: minmax(0, 1.45fr) minmax(240px, 0.82fr);
   align-items: start;
 }
 
@@ -312,8 +312,12 @@ button {
 }
 
 .project-images-trolley .project-media-portrait {
-  aspect-ratio: 0.86 / 1;
+  aspect-ratio: 1.05 / 1;
   margin-top: clamp(32px, 5vw, 90px);
+}
+
+.project-images-trolley .project-media-portrait img {
+  object-fit: contain;
 }
 
 .project-images-trolley .project-media-landscape {
