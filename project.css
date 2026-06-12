@@ -79,12 +79,20 @@ img {
   width: 100%;
   max-height: calc(100svh - 88px);
   background: #f4f4f1;
-  border: 1px solid var(--soft-line);
   object-fit: cover;
 }
 
+.tray-page .project-hero {
+  display: grid;
+  place-items: center;
+  padding-block: 28px 36px;
+}
+
 .tray-page .project-hero img {
-  aspect-ratio: 2037 / 1363;
+  width: min(82vw, 1480px);
+  max-height: calc(76svh - 52px);
+  aspect-ratio: auto;
+  object-fit: contain;
 }
 
 .trolley-page .project-hero img {
@@ -209,7 +217,6 @@ img {
 .project-figure img {
   width: 100%;
   background: #f4f4f1;
-  border: 1px solid var(--soft-line);
 }
 
 .figure-caption {
@@ -331,7 +338,6 @@ img {
 
 .closing-image img {
   width: 100%;
-  border: 1px solid var(--soft-line);
 }
 
 .trolley-page .closing-image {
@@ -437,8 +443,13 @@ img {
 
   .tray-page .project-hero img,
   .trolley-page .project-hero img {
+    width: 100%;
     max-height: none;
     aspect-ratio: auto;
+  }
+
+  .tray-page .project-hero {
+    padding-block: 12px;
   }
 
   .project-intro,
